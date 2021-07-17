@@ -1,4 +1,4 @@
-fn pascals_triangle(num_rows: i32) -> Vec<Vec<i32>> {
+pub fn pascals_triangle(num_rows: i32) -> Vec<Vec<i32>> {
     use std::convert::TryInto;
     let num_rows = num_rows.try_into().unwrap();
 
