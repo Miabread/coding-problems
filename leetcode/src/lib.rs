@@ -1,3 +1,4 @@
+pub mod happy_number;
 pub mod longest_common_prefix;
 pub mod number_of_1_bits;
 pub mod pascals_triangle;
