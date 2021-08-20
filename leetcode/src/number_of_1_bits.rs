@@ -1,12 +1,10 @@
 pub fn shifts(mut n: u32) -> i32 {
     let mut count = 0;
-    for _ in 0..32 {
-        if n % 2 == 1 {
-            count += 1;
-        }
+    while n != 0 {
+        count += n & 1;
         n >>= 1;
     }
-    count
+    count as i32
 }
 
 pub fn string(n: u32) -> i32 {
