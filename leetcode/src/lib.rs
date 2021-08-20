@@ -5,4 +5,5 @@ pub mod pascals_triangle;
 pub mod remove_element;
 pub mod single_number;
 pub mod two_sum;
+pub mod valid_palindrome;
 pub mod valid_parentheses;
