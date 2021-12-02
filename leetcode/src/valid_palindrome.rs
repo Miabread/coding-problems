@@ -34,12 +34,12 @@ pub fn match_loop(input: &str) -> bool {
 
 #[test]
 fn test_iterator() {
-    assert_eq!(true, iterator("A man, a plan, a canal: Panama"));
-    assert_eq!(false, iterator("race a car"));
+    assert!(iterator("A man, a plan, a canal: Panama"));
+    assert!(!iterator("race a car"));
 }
 
 #[test]
 fn test_match_loop() {
-    assert_eq!(true, match_loop("A man, a plan, a canal: Panama"));
-    assert_eq!(false, match_loop("race a car"));
+    assert!(match_loop("A man, a plan, a canal: Panama"));
+    assert!(!match_loop("race a car"));
 }

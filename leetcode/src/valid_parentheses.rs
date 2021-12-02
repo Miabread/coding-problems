@@ -19,9 +19,9 @@ pub fn valid_parentheses(input: &str) -> bool {
 
 #[test]
 fn test_valid_parentheses() {
-    assert_eq!(true, valid_parentheses("()"));
-    assert_eq!(true, valid_parentheses("()[]{}"));
-    assert_eq!(false, valid_parentheses("(]"));
-    assert_eq!(false, valid_parentheses("([)]"));
-    assert_eq!(true, valid_parentheses("{[]}"));
+    assert!(valid_parentheses("()"));
+    assert!(valid_parentheses("()[]{}"));
+    assert!(!valid_parentheses("(]"));
+    assert!(!valid_parentheses("([)]"));
+    assert!(valid_parentheses("{[]}"));
 }

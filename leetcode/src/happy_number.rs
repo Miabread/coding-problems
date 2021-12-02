@@ -44,12 +44,12 @@ pub fn string(mut n: i32) -> bool {
 
 #[test]
 fn test_bits() {
-    assert_eq!(true, bits(19));
-    assert_eq!(false, bits(2));
+    assert!(bits(19));
+    assert!(!bits(2));
 }
 
 #[test]
 fn test_string() {
-    assert_eq!(true, string(19));
-    assert_eq!(false, string(2));
+    assert!(string(19));
+    assert!(!string(2));
 }
